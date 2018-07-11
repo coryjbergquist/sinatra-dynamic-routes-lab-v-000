@@ -34,6 +34,7 @@ class App < Sinatra::Base
       op = *
     else
       op = /
+    end
     "#{params[:number1].to_i} #{params[:operation]} #{params[:number2].to_i}"
 
   end
