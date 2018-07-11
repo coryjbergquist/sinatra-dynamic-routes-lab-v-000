@@ -34,6 +34,7 @@ class App < Sinatra::Base
     else
       op = "/"
     end
+    binding.pry
     params[:number1].to_i op.to_i params[:number2].to_i
   end
 
