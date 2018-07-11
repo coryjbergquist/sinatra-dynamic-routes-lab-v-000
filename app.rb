@@ -14,6 +14,7 @@ class App < Sinatra::Base
   end
 
   get "/say/:number/:phrase" do
+    binding.pry
     params[:number].times do |x|  #params[:number] must be integer
       params[:phrase]
     end
