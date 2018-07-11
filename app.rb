@@ -27,13 +27,13 @@ class App < Sinatra::Base
     result = ""
     if params[:operation] == "add"
       binding.pry
-      result = (params[:number1].to_i + params[:number2].to_i).to_s
+      (params[:number1].to_i + params[:number2].to_i).to_s
     elsif params[:operation] == "subtract"
-      params[:number1].to_i - params[:number2].to_i
+      (params[:number1].to_i - params[:number2].to_i).to_s
     elsif params[:operation] == "multiply"
-      params[:number1].to_i * params[:number2].to_i
+      (params[:number1].to_i * params[:number2].to_i).to_s
     else
-      params[:number1].to_i / params[:number2].to_i
+      (params[:number1].to_i / params[:number2].to_i).to_s
     end
   end
 
