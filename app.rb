@@ -23,10 +23,8 @@ class App < Sinatra::Base
     "#{params.values.join(" ")}."
   end
 
-  get "/:operation/:number1/:number2" do 
+  get "/:operation/:number1/:number2" do
     "#{:number1} #{:operation} #{:number2}"
   end
-  
-
 
 end
