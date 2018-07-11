@@ -24,7 +24,16 @@ class App < Sinatra::Base
   end
 
   get "/:operation/:number1/:number2" do
+    op = ""
     binding.pry
+    if params[:operation] == "add"
+      op = +
+    elsif params[:operation] == "subtract"
+      op = -
+    elsif params[:operation] == "multiply"
+      op = *
+    else
+      op = /
     "#{params[:number1].to_i} #{params[:operation]} #{params[:number2].to_i}"
 
   end
