@@ -24,6 +24,7 @@ class App < Sinatra::Base
   end
 
   get "/:operation/:number1/:number2" do
+    binding.pry
     "#{:number1.values.to_i} #{:operation} #{:number2.values.to_i}"
   end
 
