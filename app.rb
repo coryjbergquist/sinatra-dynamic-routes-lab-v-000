@@ -25,6 +25,7 @@ class App < Sinatra::Base
 
   get "/:operation/:number1/:number2" do
     op = ""
+    binding.pry
     if params[:operation] == "add"
       op = +
     elsif params[:operation] == "subtract"
